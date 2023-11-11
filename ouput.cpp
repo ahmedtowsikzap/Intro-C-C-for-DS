@@ -18,9 +18,9 @@ int main(){
 
     // waht if I want to use quotation as well??
 
-    std:: cout<< "my  favo number is "<<a<<"\n";
+    std:: cout<< "my  favo number is "<<a<< std::endl;
 
-    std:: cout<< "my number should be appear here "<<a<< " faovite is ";
+    // std:: cout<< "my number should be appear here "<<a<< " faovite is ";
     // std:: cout<<a;
     
     std::cout<<a<<" "<<b;
