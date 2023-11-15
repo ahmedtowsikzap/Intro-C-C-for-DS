@@ -14,7 +14,7 @@ class Student{
  
  roll = r;
  cls = c;
- gpa = g
+ gpa = g;
 
   }
 
@@ -22,21 +22,11 @@ class Student{
 
 int main(){
     
- Student ahmed;
+ Student ahmed(25, 6, 5.77);
 
- ahmed.roll = 29;
-ahmed.cls=9;
-ahmed.gpa = 5.77;
+ cout<<ahmed.roll<<ahmed.gpa;
 
 
-Student rahim;
-
-
-rahim.roll = 45;
-
-rahim.cls = 10;
-
-rahim.gpa = 4.55;
     return 0;
 
 }
