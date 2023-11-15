@@ -9,7 +9,14 @@ class Student{
     int roll;
     int cls;
     double gpa;
+  Student(int r, int c, double g){
 
+ 
+ roll = r;
+ cls = c;
+ gpa = g
+
+  }
 
 };
 
