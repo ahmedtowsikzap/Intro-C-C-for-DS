@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int* get_array(int n){
+int *get_array(int n){
 
     int *p = new int[n];
     for(int i=0; i<n; i++){
