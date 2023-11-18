@@ -43,20 +43,49 @@ Student a;
   else if(c.marks > a.marks && c.marks > b.marks){
       cout<<c.id<<" "<<c.name<<" "<<c.section<<" "<<c.marks<<endl;
   }
-  else{
-if(a.marks == b.marks && a.id<b.id){
-    cout << a.id << " " << a.name << " " << a.section << " " << a.marks<<endl;
-  }
-  else if(b.marks == c.marks && b.id < c.id){
-    cout << b.id << " " << b.name << " " << b.section << " " << b.marks<<endl;
-  }
-  else if(c.marks == a.marks && c.id < a.id){
-    cout << c.id << " " << c.name << " " << c.section << " " << c.marks<<endl;
-  }
 
+  else {
+   if (a.marks == b.marks && b.marks == c.marks){
+    if(a.id < b.id && a.id < c.id){
+         cout<<a.id<<" "<<a.name<<" "<<a.section<<" "<<a.marks<<endl;
+    }
+ else if(b.id < a.id && b.id < c.id){
+        cout<<b.id<<" "<<b.name<<" "<<b.section<<" "<<b.marks<<endl;
+     }
+
+ else if(c.id < a.id && c.id < b.id){
+        cout<<c.id<<" "<<c.name<<" "<<c.section<<" "<<c.marks<<endl;
+     }
+     }
+    
+     
+
+else if(a.marks == b.marks){
+    if(a.id < b.id){
+cout << a.id << " " << a.name << " " << a.section << " " << a.marks<<endl;
+    }
+    else{
+        cout << b.id << " " << b.name << " " << b.section << " " << b.marks<<endl;
+    }
+  }
+  else if(b.marks == c.marks){
+    if(b.id < c.id){
+         cout << b.id << " " << b.name << " " << b.section << " " << b.marks<<endl;
+    }
+    else{
+        cout << c.id << " " << c.name << " " << c.section << " " << c.marks<<endl;
+    }
+  }
+  else if(c.marks == a.marks){
+    if(c.id < a.id){
+ cout << c.id << " " << c.name << " " << c.section << " " << c.marks<<endl;
+    }
+    else{
+        cout << a.id << " " << a.name << " " << a.section << " " << a.marks<<endl;
+    }
+  }
   }
   
-
     }
     return 0;
 

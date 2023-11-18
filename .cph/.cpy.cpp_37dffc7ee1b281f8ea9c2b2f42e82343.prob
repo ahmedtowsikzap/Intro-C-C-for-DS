@@ -1,0 +1,1 @@
+{"name":"Local: cpy","url":"c:\\Users\\ahmed\\intro to c++ for DS\\cpy.cpp","tests":[{"id":1700243291157,"input":"5\n1 2 3 4 5\n10\n6 7 8 9 10","output":"1 2 3 4 5 6 7 8 9 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ahmed\\intro to c++ for DS\\cpy.cpp","group":"local","local":true}
