@@ -5,33 +5,35 @@ class Student{
 
     public:
     int roll;
-    string name;
+    char name[100];
     char section;
     int math_marks;
     int cls;
 
-    Student(string name, int roll, char section, int math_marks, int cls){
+    Student(char *name, int roll, char section, int math_marks, int cls){
         this->roll = roll;
-        this->name = name;
+        strcpy(this->name, name);
         this->section = section;
         this->math_marks = math_marks;
         this->cls= cls;
 
 
     }
-    
-
 
 };
 
 int main(){
-    
-
-    Student ahmed("ahmed", 25, 'A', 67, 12);
 
 
-    cout<<ahmed.name;
+    char name[100] = "ahmed";
+    Student *ahmed = new Student(name, 25, 'A', 67, 12);
+
+
+    (*ahmed).cls = 4; 
+    cout<< (*ahmed).cls;
 
     return 0;
+  
+
 
 }
