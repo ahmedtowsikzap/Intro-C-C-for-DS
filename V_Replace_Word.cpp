@@ -16,16 +16,8 @@ int main(){
 
     }
 
-    cout<<s;
+    cout<<s<<endl;
     
-
-
-
-
-
-
- 
-
     return 0;
 
 }
