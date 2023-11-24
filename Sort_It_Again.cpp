@@ -26,7 +26,7 @@ int main(){
      for(int i=0; i<n-1; i++){
         for(int j=i+1; j<n; j++){
 
-        if(student[i].eng_marks < student[j].math_marks){
+        if(student[i].eng_marks < student[j].eng_marks){
                 swap(student[i], student[j]);
         }
         if(student[i].eng_marks == student[j].eng_marks){
@@ -34,6 +34,15 @@ int main(){
                 swap(student[i], student[j]);
             }
         }
+        else if(student[i].eng_marks == student[j].eng_marks){
+            if(student[i].math_marks == student[j].math_marks){
+
+            if(student[i].id > student[j].id ){
+                swap(student[i], student[j]);
+            }
+            }
+        }
+        
      }
      }
 
