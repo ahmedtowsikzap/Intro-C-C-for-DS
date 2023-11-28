@@ -2,13 +2,8 @@
 
 int main(){
 
+ double a = 3.57774;
 
-     int n;
-     scanf("%d", &n);
-
-     int int_marks = n;
-
-     printf("%d", int_marks);
-
+ printf("%0.4lf", a);
     return 0;
 }
