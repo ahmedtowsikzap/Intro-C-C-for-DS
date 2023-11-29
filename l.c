@@ -2,8 +2,6 @@
 
 int main(){
 
- double a = 3.57774;
+ int euslajdfDJ= 5;
 
- printf("%0.4lf", a);
-    return 0;
 }
